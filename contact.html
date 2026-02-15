@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Daana Pani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/Logo.jpg" type="image/jpeg">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">
+    <img src="images/Logo.jpg" alt="Daana Pani Logo">
+  </a>
+  <button class="mobile-menu-btn" type="button" aria-label="Toggle navigation">☰</button>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resturant.html">Restaurant</a>
+    <a href="event.html">Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="btn">Contact</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>Contact Us</h1>
+  <p>We’d love to hear from you</p>
+</section>
+
+<section class="about">
+  <form class="form">
+    <input type="text" id="contact-name" placeholder="Your Name" required>
+    <input type="email" id="contact-email" placeholder="Email" required>
+    <textarea id="contact-message" placeholder="Your Message"></textarea>
+    <button type="button" class="btn" onclick="sendContactEnquiry()">Send Enquiry</button>
+
+  </form>
+
+  <p><strong>Phone:</strong> +91 7483567640</p>
+  <p><strong>Location:</strong> Near Bidar University, Near Chandpaure Bharath Petroleam, Halhalli K, Bidar-585415, Karnataka</p>
+</section>
+<section class="map-section">
+  <h2>Find Us</h2>
+
+  <iframe
+    src="https://maps.google.com/maps?q=Daana+Pani+Bidar&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    width="100%"
+    height="350"
+    title="Google Map Location of Daana Pani"
+    allowfullscreen>
+  </iframe>
+
+  <a class="btn-outline map-btn"
+     href="https://maps.app.goo.gl/59BD6tATxZqKxvNR9"
+     target="_blank"
+     rel="noopener noreferrer">
+     📍 Open in Google Maps
+  </a>
+</section>
+<a href="https://wa.me/917483567640"
+   class="floating-whatsapp"
+   rel="noopener noreferrer"
+   target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"></a>
+
+
+
+<footer>
+  <p>© 2026 Daana Pani | All Rights Reserved</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

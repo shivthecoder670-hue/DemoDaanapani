@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Daana Pani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/Logo.jpg" type="image/jpeg">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">
+    <img src="images/Logo.jpg" alt="Daana Pani Logo">
+  </a>
+  <button class="mobile-menu-btn" type="button" aria-label="Toggle navigation">☰</button>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resturant.html">Restaurant</a>
+    <a href="event.html">Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="btn">Contact</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>Gallery</h1>
+  <p>Moments captured at Daana Pani</p>
+</section>
+
+<section class="gallery-controls">
+  <button onclick="filterGallery('all')" class="btn-outline">All</button>
+  <button onclick="filterGallery('food')" class="btn-outline">Food</button>
+  <button onclick="filterGallery('events')" class="btn-outline">Events</button>
+  <button onclick="filterGallery('ambience')" class="btn-outline">Ambience</button>
+</section>
+
+<section class="gallery" id="gallery">
+  <img src="images/Food2.jpeg.jpeg" class="food" onclick="openLightbox(this)" alt="Village Special Thali">
+  <img src="images/Food.jpeg.jpeg" class="food" onclick="openLightbox(this)" alt="Paneer Curry">
+  <img src="images/Food3.jpeg.jpeg" class="food" onclick="openLightbox(this)" alt="Authentic Taste">
+  <img src="images/Event1.jpeg.jpeg" class="events" onclick="openLightbox(this)" alt="Wedding Setup">
+  <img src="images/Event2.jpeg.jpeg" class="events" onclick="openLightbox(this)" alt="Grand Celebration">
+  <img src="images/Ambience.jpeg.jpeg" class="ambience" onclick="openLightbox(this)" alt="Restaurant Ambience">
+  <img src="images/Ambience2.jpeg.jpeg" class="ambience" onclick="openLightbox(this)" alt="Dining Area">
+  <img src="images/Ambience3.jpeg.jpeg" class="ambience" onclick="openLightbox(this)" alt="Rustic Vibes">
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" alt="lightbox">
+</div>
+<a href="https://wa.me/917483567640"
+   class="floating-whatsapp"
+   rel="noopener noreferrer"
+   target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"></a>
+
+<footer>
+  <p>© 2026 Daana Pani | All Rights Reserved</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

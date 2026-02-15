@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant | Daana Pani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/Logo.jpg" type="image/jpeg">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">
+    <img src="images/Logo.jpg" alt="Daana Pani Logo">
+  </a>
+  <button class="mobile-menu-btn" type="button" aria-label="Toggle navigation">☰</button>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resturant.html">Restaurant</a>
+    <a href="event.html">Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="btn">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+  <h1>Our Restaurant</h1>
+  <p>Authentic Village Taste • Premium Dining</p>
+</section>
+
+<!-- MENU -->
+<section class="menu-section">
+  <h2>Village Special Menu</h2>
+
+  <div class="menu-category">
+    <h3>🥗 Starters</h3>
+    <div class="menu-item">
+      <span>Makki Pakora</span><span>₹180</span>
+    </div>
+    <div class="menu-item">
+      <span>Desi Paneer Tikka</span><span>₹260</span>
+    </div>
+  </div>
+
+  <div class="menu-category">
+    <h3>🍛 Main Course</h3>
+    <div class="menu-item">
+      <span>Village Special Thali</span><span>₹320</span>
+    </div>
+    <div class="menu-item">
+      <span>Desi Dal Tadka</span><span>₹190</span>
+    </div>
+    <div class="menu-item">
+      <span>Bajra Roti (2)</span><span>₹80</span>
+    </div>
+  </div>
+
+  <div class="menu-category">
+    <h3>🍮 Desserts</h3>
+    <div class="menu-item">
+      <span>Gulab Jamun</span><span>₹120</span>
+    </div>
+    <div class="menu-item">
+      <span>Desi Kheer</span><span>₹140</span>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section class="reservation">
+  <div class="reservation-container">
+    <h2>Reserve Your Table</h2>
+    <p>Experience village hospitality with comfort & care</p>
+
+    <form class="reservation-form">
+      <div class="form-group">
+        <label for="res-name">Full Name</label>
+        <input type="text" id="res-name" placeholder="John Doe" required>
+      </div>
+      <div class="form-group">
+        <label for="res-phone">Phone Number</label>
+        <input type="tel" id="res-phone" placeholder="+91 98765 43210" required>
+      </div>
+      <div class="form-group">
+        <label for="reservation-date">Preferred Date</label>
+        <input type="date" id="reservation-date" required>
+      </div>
+      <div class="form-group">
+        <label for="res-time-value">Preferred Time</label>
+        <div class="time-selection">
+          <select id="res-time-value" required>
+            <option value="">Select Time</option>
+            <option value="1:00">1:00</option>
+            <option value="1:30">1:30</option>
+            <option value="2:00">2:00</option>
+            <option value="2:30">2:30</option>
+            <option value="3:00">3:00</option>
+            <option value="3:30">3:30</option>
+            <option value="4:00">4:00</option>
+            <option value="4:30">4:30</option>
+            <option value="5:00">5:00</option>
+            <option value="5:30">5:30</option>
+            <option value="6:00">6:00</option>
+            <option value="6:30">6:30</option>
+            <option value="7:00">7:00</option>
+            <option value="7:30">7:30</option>
+            <option value="8:00">8:00</option>
+            <option value="8:30">8:30</option>
+            <option value="9:00">9:00</option>
+            <option value="9:30">9:30</option>
+            <option value="10:00">10:00</option>
+            <option value="10:30">10:30</option>
+            <option value="11:00">11:00</option>
+            <option value="11:30">11:30</option>
+            <option value="12:00">12:00</option>
+            <option value="12:30">12:30</option>
+          </select>
+          <select id="res-time-period" required title="Choose Am or Pm">
+            <option value="PM">PM</option>
+            <option value="AM">AM</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group full-width">
+        <label for="guest-count">Number of Guests</label>
+        <select id="guest-count" required>
+          <option value="">Select an option</option>
+          <option>1–2 Guests</option>
+          <option>3–5 Guests</option>
+          <option>6–10 Guests</option>
+          <option>10+ Guests</option>
+        </select>
+      </div>
+      <button type="button" class="btn" onclick="sendReservation()">Confirm Reservation</button>
+    </form>
+  </div>
+</section>
+<a href="https://wa.me/917483567640"
+   class="floating-whatsapp"
+   rel="noopener noreferrer"
+   target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"></a>
+
+<footer>
+  <p>© 2026 Daana Pani | All Rights Reserved</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
